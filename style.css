@@ -1,3 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1d1d1d; /* Fundo mais escuro para o cabeçalho */
+    color: #00bcd4; /* Texto azul */
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/* Seção de jogos */
+#games-section {
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00bcd4; /* Azul */
+    margin-bottom: 20px;
+}
+
+/* Container de jogos */
+#games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.game-card {
+    background-color: #1f1f1f; /* Fundo de card */
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Imagem do jogo */
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Título e descrição */
+h3 {
+    font-size: 1.5rem;
+    color: #00bcd4; /* Azul */
+    margin-top: 15px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ddd; /* Texto claro */
+}
+
+/* Botão de jogar */
+button {
+    background-color: #00bcd4; /* Azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007b8a; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #1d1d1d;
+    color: #888;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
 /* Reset de estilos */
 * {
     margin: 0;
